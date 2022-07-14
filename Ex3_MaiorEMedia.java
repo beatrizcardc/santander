@@ -27,7 +27,7 @@ e a média desses números.
 
         System.out.println("Maior: " + maiorNumero);//realização da segunda parte do exercício -
         //deixamos o sysout fora do laço, senão mostraria o maior vez por vez, e só queremos ao final dos 5 números.
-        System.out.println("A soma dos números é: " + somaNumero);//esse sysout também precisa ficar fora do laço de repetição, para mostrar o resultado uma única vez
+        System.out.println("A média dos números é: " + somaNumero/5);//esse sysout também precisa ficar fora do laço de repetição, para mostrar o resultado uma única vez
 
     }
 
