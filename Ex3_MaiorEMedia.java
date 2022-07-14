@@ -12,19 +12,22 @@ e a média desses números.
         Scanner scan = new Scanner(System.in);
         int numero;
         int maiorNumero = 0;
-        int mediaNumero = 0;
+        int somaNumero = 0; //faremos a soma dos nºs inseridos
 
         int count = 0;
         do {
             System.out.println("Digite um número: ");
             numero = scan.nextInt();
+            somaNumero = somaNumero + numero;
+
             if (numero > maiorNumero) maiorNumero = numero;
 
             count = count + 1;
         } while(count < 5);//realização da primeira parte do exercício
 
-        System.out.println("Maior: " + maior);//realização da segunda parte do exercício -
+        System.out.println("Maior: " + maiorNumero);//realização da segunda parte do exercício -
         //deixamos o sysout fora do laço, senão mostraria o maior vez por vez, e só queremos ao final dos 5 números.
+        System.out.println("A soma dos números é: " + somaNumero);//esse sysout também precisa ficar fora do laço de repetição, para mostrar o resultado uma única vez
 
     }
 
