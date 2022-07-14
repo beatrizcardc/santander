@@ -18,7 +18,15 @@ e a média desses números.
         do {
             System.out.println("Digite um número: ");
             numero = scan.nextInt();
+            if (numero > maiorNumero) maiorNumero = numero;
+
             count = count + 1;
         } while(count < 5);//realização da primeira parte do exercício
+
+        System.out.println("Maior: " + maior);//realização da segunda parte do exercício -
+        //deixamos o sysout fora do laço, senão mostraria o maior vez por vez, e só queremos ao final dos 5 números.
+
     }
+
+
 }
